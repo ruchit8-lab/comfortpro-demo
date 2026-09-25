@@ -91,5 +91,10 @@ export default defineConfig(async () => {
         : {}),
     },
     plugins,
+    build: {
+      rollupOptions: {
+        external: ["@vercel/analytics/next"],
+      },
+    },
   };
 });
